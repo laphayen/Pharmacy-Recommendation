@@ -13,7 +13,10 @@ spring:
     activate:
       on-profile: common
 
-# ...
+kakao:
+  rest:
+    api:
+      key: ${KAKAO_REST_API_KEY}
 
 ---
 spring:
