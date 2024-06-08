@@ -39,6 +39,10 @@ dependencies {
 
 	// spock mock
 	testImplementation('net.bytebuddy:byte-buddy:1.12.10')
+
+	// testcontainers
+	testImplementation 'org.testcontainers:spock:1.19.8'
+	testImplementation 'org.testcontainers:mariadb:1.19.8'
 }
 
 tasks.named('test') {
