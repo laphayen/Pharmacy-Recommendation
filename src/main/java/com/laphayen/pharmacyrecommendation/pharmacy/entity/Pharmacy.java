@@ -1,4 +1,4 @@
-package com.laphayen.pharmacyrecommendation.api.pharmacy.entity;
+package com.laphayen.pharmacyrecommendation.pharmacy.entity;
 
 import com.laphayen.pharmacyrecommendation.BaseTimeEntity;
 import jakarta.persistence.Entity;

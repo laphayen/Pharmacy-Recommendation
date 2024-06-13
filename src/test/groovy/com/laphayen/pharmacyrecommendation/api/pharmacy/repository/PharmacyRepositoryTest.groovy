@@ -1,7 +1,8 @@
 package com.laphayen.pharmacyrecommendation.api.pharmacy.repository
 
 import com.laphayen.pharmacyrecommendation.AbstractIntegrationContainerBaseTest
-import com.laphayen.pharmacyrecommendation.api.pharmacy.entity.Pharmacy
+import com.laphayen.pharmacyrecommendation.pharmacy.entity.Pharmacy
+import com.laphayen.pharmacyrecommendation.pharmacy.repository.PharmacyRepository
 import org.springframework.beans.factory.annotation.Autowired
 
 import java.time.LocalDateTime

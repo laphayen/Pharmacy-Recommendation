@@ -1,8 +1,9 @@
 package com.laphayen.pharmacyrecommendation.api.pharmacy.service
 
 import com.laphayen.pharmacyrecommendation.AbstractIntegrationContainerBaseTest
-import com.laphayen.pharmacyrecommendation.api.pharmacy.entity.Pharmacy
-import com.laphayen.pharmacyrecommendation.api.pharmacy.repository.PharmacyRepository
+import com.laphayen.pharmacyrecommendation.pharmacy.entity.Pharmacy
+import com.laphayen.pharmacyrecommendation.pharmacy.repository.PharmacyRepository
+import com.laphayen.pharmacyrecommendation.pharmacy.service.PharmacyRepositoryService
 import org.springframework.beans.factory.annotation.Autowired
 
 class PharmacyRepositoryServiceTest extends AbstractIntegrationContainerBaseTest {
