@@ -3,8 +3,8 @@ package com.laphayen.pharmacyrecommendation.pharmacy.service;
 
 import com.laphayen.pharmacyrecommendation.pharmacy.dto.PharmacyDto;
 import com.laphayen.pharmacyrecommendation.pharmacy.entity.Pharmacy;
-import groovy.util.logging.Slf4j;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
