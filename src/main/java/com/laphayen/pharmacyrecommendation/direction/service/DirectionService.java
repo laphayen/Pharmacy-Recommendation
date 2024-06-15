@@ -2,11 +2,14 @@ package com.laphayen.pharmacyrecommendation.direction.service;
 
 import com.laphayen.pharmacyrecommendation.api.dto.DocumentDto;
 import com.laphayen.pharmacyrecommendation.direction.entity.Direction;
+import com.laphayen.pharmacyrecommendation.direction.repository.DirectionRepository;
 import com.laphayen.pharmacyrecommendation.pharmacy.dto.PharmacyDto;
 import com.laphayen.pharmacyrecommendation.pharmacy.service.PharmacySearchService;
 import groovy.util.logging.Slf4j;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -23,6 +26,13 @@ public class DirectionService {
     private static final double RADIUS_KM = 10.0;   // 반경 10 km
 
     private final PharmacySearchService pharmacySearchService;
+    private final DirectionRepository directionRepository;
+
+    @Transactional
+    public List<Direction> saveAll(List<Direction> directionList) {
+        if(CollectionUtils.isEmpty(directionList)) return Collections.emptyList();
+        return directionRepository.saveAll(directionList);
+    }
 
     public List<Direction> buildDirectionList(DocumentDto documentDto) {
 
