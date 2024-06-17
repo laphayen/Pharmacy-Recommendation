@@ -6,8 +6,9 @@ import com.laphayen.pharmacyrecommendation.direction.entity.Direction;
 import com.laphayen.pharmacyrecommendation.direction.repository.DirectionRepository;
 import com.laphayen.pharmacyrecommendation.pharmacy.dto.PharmacyDto;
 import com.laphayen.pharmacyrecommendation.pharmacy.service.PharmacySearchService;
-import groovy.util.logging.Slf4j;
+
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
