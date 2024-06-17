@@ -50,6 +50,10 @@ dependencies {
 	// mockWebServer
 	testImplementation('com.squareup.okhttp3:okhttp:4.10.0')
 	testImplementation('com.squareup.okhttp3:mockwebserver:4.10.0')
+
+	// handlebars
+	implementation group: 'com.github.jknack', name: 'handlebars', version: '4.0.6'
+
 }
 
 tasks.named('test') {
