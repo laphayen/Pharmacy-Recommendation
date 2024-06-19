@@ -1,4 +1,4 @@
--- MariaDB dump 15.2  Distrib 11.3.2-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.7.3-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: 127.0.0.1    Database: pharmacy-recommendation
 -- ------------------------------------------------------
@@ -23,18 +23,18 @@ DROP TABLE IF EXISTS `direction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `direction` (
-                             `id` bigint(20) NOT NULL AUTO_INCREMENT,
-                             `created_date` datetime(6) DEFAULT NULL,
-                             `modified_date` datetime(6) DEFAULT NULL,
-                             `distance` double NOT NULL,
-                             `input_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                             `input_latitude` double NOT NULL,
-                             `input_longitude` double NOT NULL,
-                             `target_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                             `target_latitude` double NOT NULL,
-                             `target_longitude` double NOT NULL,
-                             `target_pharmacy_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                             PRIMARY KEY (`id`)
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_date` datetime(6) DEFAULT NULL,
+  `modified_date` datetime(6) DEFAULT NULL,
+  `distance` double NOT NULL,
+  `input_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `input_latitude` double NOT NULL,
+  `input_longitude` double NOT NULL,
+  `target_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `target_latitude` double NOT NULL,
+  `target_longitude` double NOT NULL,
+  `target_pharmacy_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-12 23:07:01
+-- Dump completed on 2022-10-24 11:01:10
