@@ -1,3 +1,3 @@
-FROM mariadb:11
+FROM mariadb:10
 
 ENV TZ=Asia/Seoul
