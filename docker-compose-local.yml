@@ -1,4 +1,4 @@
-version: "2.27.0"
+version: "3.8"
 services:
   pharmacy-recommendation-redis:
     container_name: pharmacy-recommendation-redis
