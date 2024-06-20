@@ -4,7 +4,6 @@ import com.laphayen.pharmacyrecommendation.api.dto.DocumentDto;
 import com.laphayen.pharmacyrecommendation.api.service.KakaoCategorySearchService;
 import com.laphayen.pharmacyrecommendation.direction.entity.Direction;
 import com.laphayen.pharmacyrecommendation.direction.repository.DirectionRepository;
-import com.laphayen.pharmacyrecommendation.pharmacy.dto.PharmacyDto;
 import com.laphayen.pharmacyrecommendation.pharmacy.service.PharmacySearchService;
 
 import lombok.RequiredArgsConstructor;
