@@ -33,8 +33,10 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	// handlebars
-	implementation 'com.github.jknack:handlebars-springmvc:4.2.0'
-	implementation 'com.github.jknack:handlebars:4.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-mustache' // Handlebars를 Mustache 템플릿 엔진으로 사용 가능
+	implementation 'com.github.jknack:handlebars-spring-boot-starter:0.2.5' // Handlebars 스프링 부트 스타터 의존성
+	implementation 'com.github.jknack:handlebars:4.3.0' // Handlebars 라이브러리
+
 
 	// spock
 	testImplementation 'org.apache.groovy:groovy:4.0.18'
