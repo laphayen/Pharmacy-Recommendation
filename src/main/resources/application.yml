@@ -36,6 +36,16 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: true
+  mustache:
+    prefix: classpath:/templates/  # 템플릿 파일 경로 prefix 설정
+    suffix: .hbs  # Handlebars 파일 확장자 설정
+
+# mustache 한글 인코딩
+server:
+  servlet:
+    encoding:
+      force: true
+
 
 pharmacy:
   recommendation:
