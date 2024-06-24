@@ -56,6 +56,9 @@ dependencies {
 	testImplementation('com.squareup.okhttp3:okhttp:4.10.0')
 	testImplementation('com.squareup.okhttp3:mockwebserver:4.10.0')
 
+	// redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
 	// https://github.com/seruco/base62
 	implementation 'io.seruco.encoding:base62:0.1.3'
 
