@@ -1,6 +1,6 @@
 package com.laphayen.pharmacyrecommendation.pharmacy.service;
 
-
+import com.laphayen.pharmacyrecommendation.pharmacy.cache.PharmacyRedisTemplateService;
 import com.laphayen.pharmacyrecommendation.pharmacy.dto.PharmacyDto;
 import com.laphayen.pharmacyrecommendation.pharmacy.entity.Pharmacy;
 import lombok.RequiredArgsConstructor;
@@ -17,9 +17,16 @@ public class PharmacySearchService {
 
     private final PharmacyRepositoryService pharmacyRepositoryService;
 
+    private final PharmacyRedisTemplateService pharmacyRedisTemplateService;
+
     public List<PharmacyDto> searchPharmacyDtoList() {
 
         // redis
+        List<PharmacyDto> pharmacyDtoList = pharmacyRedisTemplateService.findAll();
+        if(!pharmacyDtoList.isEmpty()) {
+            log.info("redis findAll success!");
+            return pharmacyDtoList;
+        }
 
         // db
         return pharmacyRepositoryService.findAll()
