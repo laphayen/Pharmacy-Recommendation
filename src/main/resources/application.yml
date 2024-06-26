@@ -83,4 +83,4 @@ server:
 pharmacy:
   recommendation:
     base:
-      url: http://localhost/dir/
+      url: http://0.0.0.0/dir/ # aws ec2 ip 할당
